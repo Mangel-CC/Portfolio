@@ -3,7 +3,7 @@ export default function SocialMediaBtn() {
         <div className="grid grid-cols-3 gap-6 max-w-md mx-auto place-items-center w-fit mt-5">
             {/* Github */}
 
-            <button onClick={() => window.open('https://github.com/Mangel-CC>', '_blank')} className="w-20 h-20 flex items-center justify-center rounded-full backdrop-blur-lg border border-white/10 bg-gradient-to-tr from-black/60 to-black/40 shadow-lg hover:shadow-2xl hover:shadow-white/20 hover:scale-110 hover:rotate-3 active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-white/30 hover:bg-gradient-to-tr hover:from-white/10 hover:to-black/40 group relative overflow-hidden">
+            <button onClick={() => window.open('https://github.com/Mangel-CC', '_blank')} className="w-20 h-20 flex items-center justify-center rounded-full backdrop-blur-lg border border-white/10 bg-gradient-to-tr from-black/60 to-black/40 shadow-lg hover:shadow-2xl hover:shadow-white/20 hover:scale-110 hover:rotate-3 active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-white/30 hover:bg-gradient-to-tr hover:from-white/10 hover:to-black/40 group relative overflow-hidden">
                 <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out" />
                     <div className="relative z-10">
                         {/* Imagen formato svg */}
