@@ -1,15 +1,61 @@
-import Navbar from "../components/Navbar"
+import SectionHeading from "../components/SectionHeading";
+import ProjectCard from "../components/ProjectCard";
+import Navbar from "../components/Navbar.tsx";
+import SpaceBackground from "../components/SpaceBackground.tsx";
 
-function projects() {
+const projects = [
+    {
+        title: "XDevLab - Aplicaciones Web",
+        description:
+            "Desarrollo de aplicaciones web con React, integracion con backend y bases de datos para el laboratorio de desarrollo XDevLab.",
+        image: "/images/project-xdevlab.jpg",
+        url: "https://github.com/Mangel-CC",
+        tags: ["React", "Firebase", "Web App"],
+    },
+    {
+        title: "Videojuego VR - Casa del Agua",
+        description:
+            "Videojuego de Realidad Virtual desarrollado en Unity, utilizado en la Casa del Agua en Villahermosa, Tabasco.",
+        image: "/images/project-vr-game.jpg",
+        url: "https://github.com/Mangel-CC",
+        tags: ["Unity", "VR", "C#", "Blender"],
+    },
+    {
+        title: "App Multiplataforma Flutter",
+        description:
+            "Aplicacion fullstack multiplataforma con Flutter para Web, Desktop y Mobile, con API backend y base de datos.",
+        image: "/images/project-flutter-app.jpg",
+        url: "https://github.com/Mangel-CC",
+        tags: ["Flutter", "API REST", "MySQL"],
+    },
+    {
+        title: "Portfolio Personal",
+        description:
+            "Sitio web personal con fondo animado de estrellas, navegacion fluida y diseno glassmorphism. Construido con React y Tailwind CSS.",
+        image: "/images/project-portfolio.jpg",
+        url: "https://github.com/Mangel-CC",
+        tags: ["React", "Tailwind CSS", "Motion"],
+    },
+];
 
-  return (
-    <>
-    <div>
-        <Navbar />
-        Proyectos
-    </div>
-    </>
-  )
+export default function Projects() {
+    return (
+        <section className="min-h-screen px-8 sm:px-16 lg:px-24 pb-20 pt-35">
+            <SpaceBackground />
+            <Navbar />
+            <div className="max-w-5xl mx-auto">
+                <SectionHeading
+                    title="Proyectos"
+                    subtitle="Una seleccion de proyectos en los que he trabajado, desde aplicaciones web hasta experiencias de realidad virtual."
+                    centered
+                />
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {projects.map((project, i) => (
+                        <ProjectCard key={project.title} {...project} index={i} />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }
-
-export default projects

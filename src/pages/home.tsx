@@ -1,38 +1,52 @@
-import Navbar from "../components/Navbar"
-import SpaceBackground from "../components/SpaceBackground"
-import AnimatedBadge from '../components/AnimatedBadge'
-import SocialMediaBtn from '../components/SocialMediaBtn'
+import { motion } from "motion/react";
+import AnimatedBadge from "../components/AnimatedBadge";
+import SocialMediaBtn from "../components/SocialMediaBtn";
+import Navbar from "../components/Navbar.tsx";
+import SpaceBackground from "../components/SpaceBackground.tsx";
 
-function home() {
-
+export default function Home() {
   return (
-    <>
-    <div>
-      {/* Componente de fondo de estrellas */}
-      <SpaceBackground />
+      <section className="flex flex-col justify-center min-h-[calc(100vh-7rem)] px-8 sm:px-16 lg:px-24 text-center items-center align-middle place-content-center">
+        <SpaceBackground />
+        <Navbar />
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="flex flex-col items-center gap-4"
+        >
+          <p className="text-muted-foreground text-sm tracking-widest uppercase font-sans">
+            Fullstack Developer
+          </p>
 
-      {/* Barra de navegación superior */}
-      <Navbar />
+          <h1 className="font-sans font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight text-balance">
+            Miguel Angel
+          </h1>
 
-      {/* Nombres */}
-      <h1 className="jsx-e15e79b6c3dbeb19 font-mono font-bold text-4xl xs:text-[42px] iphone15promax:text-[44px] sm:text-[48px] ipad11:text-[54px] md:text-[58px] text-white leading-tight project-heading">
-        Miguel Angel
-      </h1>
+          <h1 className="text-red-500 font-sans font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-accent leading-tight text-balance">
+            Cortazar Castillo
+          </h1>
 
-      {/* Apellidos */}
-      <h1 className="jsx-e15e79b6c3dbeb19 font-mono font-bold text-4xl xs:text-[42px] iphone15promax:text-[44px] sm:text-[48px] ipad11:text-[54px] md:text-[58px] text-red-500 leading-tight project-heading">
-         Cortazar Castillo
-      </h1>
+          <AnimatedBadge />
 
-      {/* Barra animada */}
-      <AnimatedBadge/>
+          <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="max-w-lg text-muted-foreground text-sm sm:text-base leading-relaxed mt-2"
+          >
+            Ingeniero en Sistemas con enfoque en desarrollo web,
+            aplicaciones multiplataforma y experiencias interactivas.
+          </motion.p>
 
-      {/* Botones de redes sociales */}
-      <SocialMediaBtn/>
-    
-    </div>
-    </>
-  )
+          <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            <SocialMediaBtn />
+          </motion.div>
+        </motion.div>
+      </section>
+  );
 }
-
-export default home
