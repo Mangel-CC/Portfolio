@@ -4,6 +4,7 @@ import GithubIcon from "../assets/github.svg?react";
 import LinkedinIcon from "../assets/linkedin.svg?react";
 import SectionHeading from "../components/SectionHeading";
 import Navbar from "../components/Navbar.tsx";
+import SpaceBackground from "../components/SpaceBackground.tsx";
 
 const contactLinks = [
     {
@@ -34,6 +35,7 @@ const fadeUp = {
 export default function Contact() {
     return (
         <section className="min-h-screen flex items-center justify-center px-8 sm:px-16 lg:px-24 py-20 pt-35">
+            <SpaceBackground />
             <Navbar />
             <div className="max-w-xl w-full mx-auto text-center">
                 <SectionHeading
