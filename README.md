@@ -4,7 +4,7 @@ Sitio web personal desarrollado con React, TypeScript y Tailwind CSS. Incluye fo
 
 ## ✨ Demo
 
-> [mangelcc.dev](portfolio.mangelcc.dev) <!-- Reemplaza con tu URL real -->
+> [mangelcc.dev](portfolio.mangelcc.dev) 
 
 ## 🛠️ Tech Stack
 
