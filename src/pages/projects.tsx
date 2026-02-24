@@ -13,17 +13,17 @@ const projects = [
         tags: ["React", "Firebase", "Web App"],
     },
     {
-        title: "Videojuego VR - Casa del Agua",
+        title: "Videojuego VR Día 0 - Casa del Agua",
         description:
             "Videojuego de Realidad Virtual desarrollado en Unity, utilizado en la Casa del Agua en Villahermosa, Tabasco.",
-        image: "/images/project-vr-game.jpg",
+        image: "https://ik.imagekit.io/8gwphgytz/D%C3%ADa0_preview.png",
         url: "https://github.com/Mangel-CC",
         tags: ["Unity", "VR", "C#", "Blender"],
     },
     {
         title: "ZonaMarket",
         description:
-            "Aplicacion fullstack multiplataforma con Flutter para Web, Desktop y Mobile, con API backend y base de datos.",
+            "Aplicacion fullstack multiplataforma con Flutter para Web, Desktop y Mobile, con API backend y base de datos. - Actualmente en rediseño",
         image: "https://ik.imagekit.io/8gwphgytz/ZonaMarket_preview.png",
         url: "https://zonamarket.mangelcc.dev",
         tags: ["Flutter", "API REST", "MySQL"],
