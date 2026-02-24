@@ -1,4 +1,4 @@
-# 🚀 Portfolio Personal — Miguel Angel Cortazar
+# 🚀 Portfolio Personal
 
 Sitio web personal desarrollado con React, TypeScript y Tailwind CSS. Incluye fondo animado de estrellas, navegación fluida entre secciones y diseño glassmorphism.
 
