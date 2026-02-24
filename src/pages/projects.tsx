@@ -31,9 +31,9 @@ const projects = [
     {
         title: "Portfolio Personal",
         description:
-            "Sitio web personal con fondo animado de estrellas, navegacion fluida y diseno glassmorphism. Construido con React y Tailwind CSS.",
-        image: "/images/project-portfolio.jpg",
-        url: "https://github.com/Mangel-CC",
+            "Repositorio de github de este mismo porfolio",
+        image: "https://ik.imagekit.io/8gwphgytz/Portfolio_preview.png",
+        url: "https://github.com/Mangel-CC/Portfolio",
         tags: ["React", "Tailwind CSS", "Motion"],
     },
 ];
