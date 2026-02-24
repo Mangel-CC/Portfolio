@@ -24,7 +24,7 @@ const projects = [
         title: "ZonaMarket",
         description:
             "Aplicacion fullstack multiplataforma con Flutter para Web, Desktop y Mobile, con API backend y base de datos.",
-        image: "https://ik.imagekit.io/8gwphgytz/%7B70F6D747-1A36-443C-BCFF-A1146D3E965B%7D.png",
+        image: "https://ik.imagekit.io/8gwphgytz/ZonaMarket_preview.png",
         url: "https://zonamarket.mangelcc.dev",
         tags: ["Flutter", "API REST", "MySQL"],
     },
