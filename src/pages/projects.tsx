@@ -4,18 +4,18 @@ import Navbar from "../components/Navbar.tsx";
 import SpaceBackground from "../components/SpaceBackground.tsx";
 
 const projects = [
-    {
+    /*{
         title: "XDevLab - Aplicaciones Web",
         description:
             "Desarrollo de aplicaciones web con React, integracion con backend y bases de datos para el laboratorio de desarrollo XDevLab.",
         image: "/images/project-xdevlab.jpg",
         url: "https://github.com/Mangel-CC",
         tags: ["React", "Firebase", "Web App"],
-    },
+    },*/
     {
         title: "Videojuego VR Día 0 - Casa del Agua",
         description:
-            "Videojuego de Realidad Virtual desarrollado en Unity, utilizado en la Casa del Agua en Villahermosa, Tabasco.",
+            "Participación en diseño y programación de la experiencia VR desarrollada en Unity, utilizada en la Casa del Agua en Villahermosa, Tabasco.",
         image: "https://ik.imagekit.io/8gwphgytz/D%C3%ADa0_preview.png",
         url: "https://github.com/Mangel-CC",
         tags: ["Unity", "VR", "C#", "Blender"],
@@ -40,7 +40,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="min-h-screen px-8 sm:px-16 lg:px-24 pb-20 pt-35">
+        <section className="min-h-screen px-8 sm:px-16 lg:px-24 pb-20 pt-35 overflow-hidden">
             <SpaceBackground />
             <Navbar />
             <div className="max-w-5xl mx-auto">
@@ -50,7 +50,7 @@ export default function Projects() {
                     centered
                 />
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {projects.map((project, i) => (
                         <ProjectCard key={project.title} {...project} index={i} />
                     ))}
