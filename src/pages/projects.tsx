@@ -21,11 +21,11 @@ const projects = [
         tags: ["Unity", "VR", "C#", "Blender"],
     },
     {
-        title: "App Multiplataforma Flutter",
+        title: "ZonaMarket",
         description:
             "Aplicacion fullstack multiplataforma con Flutter para Web, Desktop y Mobile, con API backend y base de datos.",
-        image: "/images/project-flutter-app.jpg",
-        url: "https://github.com/Mangel-CC",
+        image: "https://ik.imagekit.io/8gwphgytz/%7B70F6D747-1A36-443C-BCFF-A1146D3E965B%7D.png",
+        url: "https://zonamarket.mangelcc.dev",
         tags: ["Flutter", "API REST", "MySQL"],
     },
     {
