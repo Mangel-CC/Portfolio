@@ -9,7 +9,7 @@ const projects = [
         description:
             "Desarrollo de aplicaciones web con React, integracion con backend y bases de datos para el laboratorio de desarrollo XDevLab.",
         image: "/images/project-xdevlab.jpg",
-        url: "https://github.com/Mangel-CC",
+        url: "#",
         tags: ["React", "Firebase", "Web App"],
     },*/
     {
@@ -17,7 +17,7 @@ const projects = [
         description:
             "Participación en diseño y programación de la experiencia VR desarrollada en Unity, utilizada en la Casa del Agua en Villahermosa, Tabasco.",
         image: "https://ik.imagekit.io/8gwphgytz/D%C3%ADa0_preview.png",
-        url: "https://github.com/Mangel-CC",
+        url: "#",
         tags: ["Unity", "VR", "C#", "Blender"],
     },
     {
