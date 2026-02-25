@@ -22,7 +22,7 @@ export default function SectionHeading({title, subtitle, centered}: SectionHeadi
                     {subtitle}
                 </p>
             )}
-            <div  className="mt-4 h-px w-16 bg-linear-to-r from-red-500 to-transparent"/>
+            <div className="mt-4 h-0.5 w-20 rounded-full bg-linear-to-r from-red-500 via-red-500/50 to-transparent" />
         </motion.div>
     );
 }
