@@ -10,9 +10,10 @@ interface ProjectCardProps {
     tags: string[];
     index: number;
     showLink?: boolean;
+    linkLabel?: string;
 }
 
-export default function ProjectCard({ title, description, image, url, tags, index, showLink = true }: ProjectCardProps) {
+export default function ProjectCard({ title, description, image, url, tags, index, showLink = true, linkLabel = "Ver proyecto" }: ProjectCardProps) {
     return (
         <motion.a
             href={url}
@@ -49,7 +50,7 @@ export default function ProjectCard({ title, description, image, url, tags, inde
                         <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full
                         bg-red-500/90 backdrop-blur-sm border border-red-400/40">
                             <ExternalLink size={11} className="text-white" strokeWidth={2} />
-                            <span className="text-[10px] text-white font-medium">Ver proyecto</span>
+                            <span className="text-[10px] text-white font-medium">{linkLabel}</span>
                         </div>
                     </div>
                 )}

@@ -37,6 +37,7 @@ const projects = [
         image: "https://ik.imagekit.io/8gwphgytz/Portfolio_preview.png",
         url: "https://github.com/Mangel-CC/Portfolio",
         tags: ["React", "Tailwind CSS", "Motion"],
+        linkLabel: "Ver repositorio",
     },
 ];
 
