@@ -29,7 +29,7 @@ const skillCategories = [
     {
         title: "Otros",
         icon: Box,
-        skills: ["Unity", "Realidad Virtual", "Blender", "Git", "C#"],
+        skills: ["Unity", "Realidad Virtual", "Blender", "Git", "C#", "Java", "PHP", "Python", "C++", "Kotlin"],
     },
 ];
 
