@@ -1,10 +1,10 @@
 import type { ElementType } from "react";
-import { Link, Gamepad2, Server } from "lucide-react";
+import { Link, Gamepad2, Server, Coffee } from "lucide-react";
 import {
     SiReact, SiJavascript, SiHtml5, SiCss3, SiTailwindcss,
     SiFlutter, SiDart, SiFirebase, SiMysql, SiPostgresql,
     SiDocker, SiLinux, SiUnity, SiBlender, SiGit, SiSharp,
-    SiFramer, SiJava, SiPhp, SiPython, SiCplusplus, SiKotlin,
+    SiFramer, SiPhp, SiPython, SiCplusplus, SiKotlin,
 } from "react-icons/si";
 
 export type TechInfo = { icon?: ElementType; color?: string };
@@ -32,7 +32,7 @@ export const techConfig: Record<string, TechInfo> = {
     "Git":              { icon: SiGit,         color: "#F05032" },
     "C#":               { icon: SiSharp,       color: "#9B4F96" },
     "Motion":           { icon: SiFramer,      color: "#0055FF" },
-    "Java":             { icon: SiJava,        color: "#ED8B00" },
+    "Java":             { icon: Coffee,         color: "#ED8B00" },
     "PHP":              { icon: SiPhp,         color: "#777BB4" },
     "Python":           { icon: SiPython,      color: "#3776AB" },
     "C++":              { icon: SiCplusplus,   color: "#00599C" },
