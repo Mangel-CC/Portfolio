@@ -11,6 +11,7 @@ const projects = [
         image: "https://ik.imagekit.io/8gwphgytz/Aventura%20Jurasica.jpeg",
         url: "#",
         tags: ["Unity", "VR", "C#", "Blender"],
+        showLink: false,
     },
     {
         title: "Videojuego VR Día 0 - Casa del Agua",
@@ -19,6 +20,7 @@ const projects = [
         image: "https://ik.imagekit.io/8gwphgytz/D%C3%ADa0_preview.png",
         url: "#",
         tags: ["Unity", "VR", "C#", "Blender"],
+        showLink: false,
     },
     {
         title: "ZonaMarket",

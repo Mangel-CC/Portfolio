@@ -9,9 +9,10 @@ interface ProjectCardProps {
     url: string;
     tags: string[];
     index: number;
+    showLink?: boolean;
 }
 
-export default function ProjectCard({ title, description, image, url, tags, index }: ProjectCardProps) {
+export default function ProjectCard({ title, description, image, url, tags, index, showLink = true }: ProjectCardProps) {
     return (
         <motion.a
             href={url}
@@ -42,14 +43,16 @@ export default function ProjectCard({ title, description, image, url, tags, inde
             <div className="relative z-10 flex flex-col justify-end min-h-80 sm:min-h-90 p-5">
 
                 {/* "Ver proyecto" badge - appears on hover */}
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100
-                translate-y-1 group-hover:translate-y-0 transition-all duration-300">
-                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full
-                    bg-red-500/90 backdrop-blur-sm border border-red-400/40">
-                        <ExternalLink size={11} className="text-white" strokeWidth={2} />
-                        <span className="text-[10px] text-white font-medium">Ver proyecto</span>
+                {showLink && (
+                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100
+                    translate-y-1 group-hover:translate-y-0 transition-all duration-300">
+                        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full
+                        bg-red-500/90 backdrop-blur-sm border border-red-400/40">
+                            <ExternalLink size={11} className="text-white" strokeWidth={2} />
+                            <span className="text-[10px] text-white font-medium">Ver proyecto</span>
+                        </div>
                     </div>
-                </div>
+                )}
 
                 {/* Tech tags with icons */}
                 <div className="flex flex-wrap gap-1.5 mb-3">
