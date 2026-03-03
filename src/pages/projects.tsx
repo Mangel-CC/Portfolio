@@ -4,14 +4,14 @@ import Navbar from "../components/Navbar.tsx";
 import SpaceBackground from "../components/SpaceBackground.tsx";
 
 const projects = [
-    /*{
-        title: "XDevLab - Aplicaciones Web",
+    {
+        title: "Videojuego VR Aventura Jurásica",
         description:
-            "Desarrollo de aplicaciones web con React, integracion con backend y bases de datos para el laboratorio de desarrollo XDevLab.",
-        image: "/images/project-xdevlab.jpg",
+            "Diseño y programación de experiencia VR de un mundo jurásico con dinosaurios .",
+        image: "https://ik.imagekit.io/8gwphgytz/Aventura%20Jurasica.jpeg",
         url: "#",
-        tags: ["React", "Firebase", "Web App"],
-    },*/
+        tags: ["Unity", "VR", "C#", "Blender"],
+    },
     {
         title: "Videojuego VR Día 0 - Casa del Agua",
         description:
