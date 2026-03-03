@@ -17,6 +17,7 @@ export default function ProjectCard({ title, description, image, url, tags, inde
             href={url}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={(e) => url === "#" && e.preventDefault()}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 + index * 0.1, duration: 0.5, ease: "easeOut" }}
