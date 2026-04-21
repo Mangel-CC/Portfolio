@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 {/* Arreglo con textos para la barra*/ }
 const titles = [
     "Product Builder",
-    "Full-Stack Developer",
+    "Frontend Developer",
     "UI Designer",
     "React Specialist",
     "Unity Game Developer",

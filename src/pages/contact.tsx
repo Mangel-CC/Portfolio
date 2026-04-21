@@ -16,7 +16,7 @@ const contactLinks = [
     {
         label: "LinkedIn",
         value: "Miguel Angel Cortazar",
-        url: "www.linkedin.com/in/miguel-angel-cortazar-castillo-a316923ab",
+        url: "https://www.linkedin.com/in/miguel-angel-cortazar-castillo-a316923ab",
         icon: LinkedinIcon,
     },
     {

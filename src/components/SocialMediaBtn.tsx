@@ -12,7 +12,7 @@ const socialLinks = [
     {
         label: "LinkedIn",
         icon: LinkedinIcon,
-        url: "www.linkedin.com/in/miguel-angel-cortazar-castillo-a316923ab",
+        url: "https://www.linkedin.com/in/miguel-angel-cortazar-castillo-a316923ab",
         hoverColor: "hover:border-[#0077B7]/40 hover:shadow-[#0077B7]/10",
     },
     {
