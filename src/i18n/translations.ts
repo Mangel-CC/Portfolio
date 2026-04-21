@@ -1,6 +1,62 @@
 export type Lang = "es" | "en";
 
-export const translations = {
+export interface Translation {
+    nav: {
+        home: string;
+        about: string;
+        projects: string;
+        contact: string;
+        switchTo: string;
+    };
+    home: {
+        role: string;
+        description: string;
+    };
+    badge: {
+        titles: string[];
+    };
+    about: {
+        title: string;
+        subtitle: string;
+        bio1: string;
+        bio2: string;
+        location: string;
+        available: string;
+        languagesTitle: string;
+        spanish: string;
+        spanishLevel: string;
+        english: string;
+        englishLevel: string;
+        skills: string;
+        categories: {
+            frontend: string;
+            multiplatform: string;
+            backend: string;
+            devops: string;
+            other: string;
+        };
+        skillLabels: {
+            VR: string;
+        };
+    };
+    contact: {
+        title: string;
+        subtitle: string;
+        location: string;
+        ctaTitle: string;
+        ctaText: string;
+        sendEmail: string;
+    };
+    projects: {
+        title: string;
+        subtitle: string;
+        viewProject: string;
+        viewRepo: string;
+        items: { title: string; description: string }[];
+    };
+}
+
+export const translations: Record<Lang, Translation> = {
     es: {
         nav: {
             home: "Inicio",
@@ -177,6 +233,4 @@ export const translations = {
             ],
         },
     },
-} as const;
-
-export type Translation = typeof translations.es;
+};
