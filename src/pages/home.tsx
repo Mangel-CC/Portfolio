@@ -16,7 +16,7 @@ export default function Home() {
             className="flex flex-col items-center gap-4"
         >
           <p className="text-muted-foreground text-sm tracking-widest uppercase font-sans">
-            Fullstack Developer
+            Web Developer
           </p>
 
           <h1 className="font-sans font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight text-balance">

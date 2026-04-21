@@ -51,7 +51,7 @@ export default function About() {
 
                         <SectionHeading
                             title="Sobre Mi"
-                            subtitle="Desarrollador Fullstack apasionado por crear experiencias digitales funcionales y visualmente atractivas."
+                            subtitle="Desarrollador Frontend apasionado por crear experiencias digitales funcionales y visualmente atractivas."
                             centered={false}
                         />
 
