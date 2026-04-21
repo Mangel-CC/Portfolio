@@ -1,15 +1,17 @@
 import { motion } from "motion/react";
 import { NavLink } from "react-router-dom";
 import { Home, User, Folder, Mail } from "lucide-react";
-
-const tabs = [
-    { id: "Home", icon: Home, path: "/" },
-    { id: "About", icon: User, path: "/about" },
-    { id: "Work", icon: Folder, path: "/projects" },
-    { id: "Links", icon: Mail, path: "/contact" },
-];
+import LanguageToggle from "./LanguageToggle";
+import { useLanguage } from "../i18n/LanguageContext";
 
 export default function Navbar() {
+    const { t } = useLanguage();
+    const tabs = [
+        { id: t.nav.home, icon: Home, path: "/" },
+        { id: t.nav.about, icon: User, path: "/about" },
+        { id: t.nav.projects, icon: Folder, path: "/projects" },
+        { id: t.nav.contact, icon: Mail, path: "/contact" },
+    ];
     return (
         <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
             <nav
@@ -48,6 +50,8 @@ export default function Navbar() {
                         )}
                     </NavLink>
                 ))}
+                <div className="w-px h-6 bg-white/10 mx-1" />
+                <LanguageToggle />
             </nav>
         </div>
     );

@@ -1,21 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-
-{/* Arreglo con textos para la barra*/ }
-const titles = [
-    "Product Builder",
-    "Frontend Developer",
-    "UI Designer",
-    "React Specialist",
-    "Unity Game Developer",
-    "Blender Artist",
-    "Software Developer"
-];
+import { useLanguage } from "../i18n/LanguageContext";
 
 export default function AnimatedBadge() {
+    const { t } = useLanguage();
+    const titles = t.badge.titles;
     const [index, setIndex] = useState(0);
 
-    /* Función que cambia el indice del arrleglo en un determinado intervalo de tiempo */
+    /* Cycles the array index at a fixed time interval */
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prev) => (prev + 1) % titles.length);
@@ -25,7 +17,7 @@ export default function AnimatedBadge() {
     }, []);
 
     return (
-        /* Contenedor con animaciones */
+        /* Animated container */
         <motion.div
             layout="size"
             transition={{ duration: 0.25, ease: "easeOut" }}
@@ -40,7 +32,7 @@ export default function AnimatedBadge() {
                     transition={{ duration: 0.15, ease: "easeOut" }}
                     className="whitespace-nowrap absolute font-semibold"
                 >
-                    {/* Muestra los textos de la lista del arreglo */}
+                    {/* Renders the current title from the array */}
                     {titles[index]}
                 </motion.span>
             </AnimatePresence>

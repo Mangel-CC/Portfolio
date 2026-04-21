@@ -5,6 +5,7 @@ import LinkedinIcon from "../assets/linkedin.svg?react";
 import SectionHeading from "../components/SectionHeading";
 import Navbar from "../components/Navbar.tsx";
 import SpaceBackground from "../components/SpaceBackground.tsx";
+import { useLanguage } from "../i18n/LanguageContext";
 
 const contactLinks = [
     {
@@ -33,14 +34,15 @@ const fadeUp = {
 };
 
 export default function Contact() {
+    const { t } = useLanguage();
     return (
         <section className="min-h-screen flex items-center justify-center px-8 sm:px-16 lg:px-24 py-20 pt-35">
             <SpaceBackground />
             <Navbar />
             <div className="max-w-xl w-full mx-auto text-center">
                 <SectionHeading
-                    title="Contacto"
-                    subtitle="Si quieres hablar sobre un proyecto o simplemente saludar, no dudes en escribirme."
+                    title={t.contact.title}
+                    subtitle={t.contact.subtitle}
                     centered
                 />
 
@@ -51,7 +53,7 @@ export default function Contact() {
                     className="flex items-center justify-center gap-2.5 mb-14 text-muted-foreground text-sm"
                 >
                     <MapPin size={16} strokeWidth={1.5} className="text-red-500" />
-                    <span>Tabasco, Mexico</span>
+                    <span>{t.contact.location}</span>
                 </motion.div>
 
                 {/* Contact links */}
@@ -99,11 +101,10 @@ export default function Contact() {
                     className="p-10 sm:p-12 rounded-2xl bg-card backdrop-blur-sm border border-border"
                 >
                     <h3 className="font-sans font-semibold text-foreground text-xl mb-4">
-                        Trabajemos juntos
+                        {t.contact.ctaTitle}
                     </h3>
                     <p className="text-muted-foreground text-sm mb-10 max-w-md mx-auto leading-relaxed">
-                        Estoy abierto a oportunidades de trabajo, colaboraciones en
-                        proyectos y nuevos retos en desarrollo de software.
+                        {t.contact.ctaText}
                     </p>
                     <a
                         href="mailto:miguelangtee@outlook.es"
@@ -113,7 +114,7 @@ export default function Contact() {
               shadow-lg shadow-red-700"
                     >
                         <Mail size={18} strokeWidth={1.5} />
-                        Enviar email
+                        {t.contact.sendEmail}
                     </a>
                 </motion.div>
             </div>

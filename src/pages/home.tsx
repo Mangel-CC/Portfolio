@@ -3,8 +3,10 @@ import AnimatedBadge from "../components/AnimatedBadge";
 import SocialMediaBtn from "../components/SocialMediaBtn";
 import Navbar from "../components/Navbar.tsx";
 import SpaceBackground from "../components/SpaceBackground.tsx";
+import { useLanguage } from "../i18n/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
   return (
       <section className="flex flex-col justify-center min-h-[calc(100vh-7rem)] px-8 sm:px-16 lg:px-24 text-center items-center align-middle place-content-center">
         <SpaceBackground />
@@ -16,7 +18,7 @@ export default function Home() {
             className="flex flex-col items-center gap-4"
         >
           <p className="text-muted-foreground text-sm tracking-widest uppercase font-sans">
-            Web Developer
+            {t.home.role}
           </p>
 
           <h1 className="font-sans font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight text-balance">
@@ -35,8 +37,7 @@ export default function Home() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="max-w-lg text-muted-foreground text-sm sm:text-base leading-relaxed mt-2"
           >
-            Ingeniero en Sistemas con enfoque en desarrollo web,
-            aplicaciones multiplataforma y experiencias interactivas.
+            {t.home.description}
           </motion.p>
 
           <motion.div

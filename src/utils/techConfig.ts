@@ -28,6 +28,7 @@ export const techConfig: Record<string, TechInfo> = {
     "Unity":            { icon: SiUnity,       color: "#dddddd" },
     "VR":               { icon: Gamepad2,      color: "#a78bfa" },
     "Realidad Virtual": { icon: Gamepad2,      color: "#a78bfa" },
+    "Virtual Reality":  { icon: Gamepad2,      color: "#a78bfa" },
     "Blender":          { icon: SiBlender,     color: "#F5792A" },
     "Git":              { icon: SiGit,         color: "#F05032" },
     "C#":               { icon: SiSharp,       color: "#9B4F96" },

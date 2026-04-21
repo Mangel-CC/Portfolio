@@ -43,7 +43,7 @@ export default function ProjectCard({ title, description, image, url, tags, inde
             {/* Content overlay */}
             <div className="relative z-10 flex flex-col justify-end min-h-80 sm:min-h-90 p-5">
 
-                {/* "Ver proyecto" badge - appears on hover */}
+                {/* "View project" badge - appears on hover */}
                 {showLink && (
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100
                     translate-y-1 group-hover:translate-y-0 transition-all duration-300">
