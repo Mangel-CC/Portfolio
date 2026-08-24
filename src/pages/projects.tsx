@@ -23,6 +23,12 @@ const projectMeta = [
         tags: ["Flutter", "API REST", "MySQL"],
     },
     {
+        image: "https://raw.githubusercontent.com/Mangel-CC/CineTrack/main/docs/screenshot-discover.jpg",
+        url: "https://github.com/Mangel-CC/CineTrack",
+        tags: ["Kotlin", "Jetpack Compose", "ExoPlayer", "Room"],
+        useRepoLabel: true,
+    },
+    {
         image: "https://ik.imagekit.io/8gwphgytz/Portfolio_preview.png",
         url: "https://github.com/Mangel-CC/Portfolio",
         tags: ["React", "Tailwind CSS", "Motion"],

@@ -139,6 +139,11 @@ export const translations: Record<Lang, Translation> = {
                         "Aplicación fullstack multiplataforma con Flutter para Web, Desktop y Mobile, con API backend y base de datos. - Actualmente en rediseño",
                 },
                 {
+                    title: "CineTrack",
+                    description:
+                        "App Android de catálogo y reproducción de películas con Jetpack Compose, ExoPlayer y la API de TMDB, con favoritos, watchlist y progreso de reproducción persistente.",
+                },
+                {
                     title: "Portfolio Personal",
                     description: "Repositorio de GitHub de este mismo portfolio.",
                 },
@@ -225,6 +230,11 @@ export const translations: Record<Lang, Translation> = {
                     title: "ZonaMarket",
                     description:
                         "Cross-platform fullstack application built with Flutter for Web, Desktop and Mobile, with backend API and database. - Currently being redesigned.",
+                },
+                {
+                    title: "CineTrack",
+                    description:
+                        "Android movie catalog and playback app built with Jetpack Compose, ExoPlayer and the TMDB API, with favorites, watchlist and persistent playback progress.",
                 },
                 {
                     title: "Personal Portfolio",
