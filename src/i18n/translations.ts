@@ -144,6 +144,11 @@ export const translations: Record<Lang, Translation> = {
                         "App Android de catálogo y reproducción de películas con Jetpack Compose, ExoPlayer y la API de TMDB, con favoritos, watchlist y progreso de reproducción persistente.",
                 },
                 {
+                    title: "Nuvik POS",
+                    description:
+                        "App móvil de punto de venta para pequeños negocios: inventario, compras, ventas y reportes, con sincronización offline-first sobre Supabase.",
+                },
+                {
                     title: "Portfolio Personal",
                     description: "Repositorio de GitHub de este mismo portfolio.",
                 },
@@ -235,6 +240,11 @@ export const translations: Record<Lang, Translation> = {
                     title: "CineTrack",
                     description:
                         "Android movie catalog and playback app built with Jetpack Compose, ExoPlayer and the TMDB API, with favorites, watchlist and persistent playback progress.",
+                },
+                {
+                    title: "Nuvik POS",
+                    description:
+                        "Mobile point-of-sale app for small businesses: inventory, purchases, sales and reporting, with offline-first sync powered by Supabase.",
                 },
                 {
                     title: "Personal Portfolio",

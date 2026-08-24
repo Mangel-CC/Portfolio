@@ -29,6 +29,12 @@ const projectMeta = [
         useRepoLabel: true,
     },
     {
+        image: "https://ik.imagekit.io/8gwphgytz/NuvikPOS.jpg",
+        url: "#",
+        tags: ["React Native", "TypeScript", "Expo", "Supabase"],
+        showLink: false,
+    },
+    {
         image: "https://ik.imagekit.io/8gwphgytz/Portfolio_preview.png",
         url: "https://github.com/Mangel-CC/Portfolio",
         tags: ["React", "Tailwind CSS", "Motion"],

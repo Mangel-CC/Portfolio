@@ -5,6 +5,7 @@ import {
     SiFlutter, SiDart, SiFirebase, SiMysql, SiPostgresql,
     SiDocker, SiLinux, SiUnity, SiBlender, SiGit, SiSharp,
     SiFramer, SiPhp, SiPython, SiCplusplus, SiKotlin,
+    SiTypescript, SiSupabase, SiExpo,
 } from "react-icons/si";
 
 export type TechInfo = { icon?: ElementType; color?: string };
@@ -38,4 +39,8 @@ export const techConfig: Record<string, TechInfo> = {
     "Python":           { icon: SiPython,      color: "#3776AB" },
     "C++":              { icon: SiCplusplus,   color: "#00599C" },
     "Kotlin":           { icon: SiKotlin,      color: "#7F52FF" },
+    "React Native":     { icon: SiReact,       color: "#61DAFB" },
+    "TypeScript":       { icon: SiTypescript,  color: "#3178C6" },
+    "Supabase":         { icon: SiSupabase,    color: "#3ECF8E" },
+    "Expo":             { icon: SiExpo,        color: "#8B5CF6" },
 };
